@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildItSimple.JsonDeserializer", "BuildItSimple.JsonDeserializer\BuildItSimple.JsonDeserializer.csproj", "{0E9BD303-1986-4454-AA4A-1007B5EBB857}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E9BD303-1986-4454-AA4A-1007B5EBB857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E9BD303-1986-4454-AA4A-1007B5EBB857}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E9BD303-1986-4454-AA4A-1007B5EBB857}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E9BD303-1986-4454-AA4A-1007B5EBB857}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96997D1A-34A3-48A8-A6BC-55B862625515}
+	EndGlobalSection
+EndGlobal

@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+using System.Reflection;
 
 
 namespace BuildItSimple.JsonDeserializer
@@ -9,7 +9,7 @@ namespace BuildItSimple.JsonDeserializer
         {
             var json =  """
                         { 
-                            "name": "John\, \: \{\}\[\] \"Escapee\" Doe", 
+                            "name": "John \"Escapee\" Doe", 
                             "age": 30, 
                             "isAdmin": true, 
                             "allergies": [ "lactose", "hard work" ]
@@ -186,7 +186,10 @@ namespace BuildItSimple.JsonDeserializer
                             else
                             {
                                 tokens.Add(new Token(TokenType.StringValue, currentBuffer));
-                                isPropertyName = true;
+                                if (!inArray)
+                                {
+                                    isPropertyName = true; // Reset the flag for the next property name or value.
+                                }
                                 currentBuffer = "";
                             }
                         }
